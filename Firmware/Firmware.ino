@@ -2,8 +2,7 @@
 
 void setup() 
 {
-	
-  Serial.begin(9600);
+	Serial.begin(9600);
 	Serial.println("start");
   
 }
@@ -11,9 +10,8 @@ void setup()
 void loop() 
 {	
 	float sample = tempSensor.readCelsius();
-  ssDisplay.write(sample);
+	ssDisplay.write(sample);
 	Serial.println(sample);
   
-	delay(20);
-  
+	delay(20); 
 }
